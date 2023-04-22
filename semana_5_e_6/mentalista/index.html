@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalista</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <h1 class="page-title">O Mentalista</h1>
+            <p class="page-subtitle">Você consegue ganhar de uma máquina?</p>
+
+            <label for="player-input">Adivinhe um número entre 0 e 15</label>
+            <input type="number" name="valor" id="player-input" min="0" max="15" placeholder="consegue me ver?">
+
+            <button type="submit" class="play">Jogar</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+
+        <div class="result">
+            <h2></h2>
+        </div>
+
+        <div class="attempts">
+            <h2></h2>
+        </div>
+
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

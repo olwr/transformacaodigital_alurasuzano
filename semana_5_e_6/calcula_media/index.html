@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Média</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title-container">
+        <h1>
+            Calculador de média
+        </h1>
+        <p>Calcula a média final do ano de acordo com as 4 notas dos bimestres</p>
+    </div>
+
+
+    <main>
+
+        <div class="row">
+            <div class="column">
+                <section class="student-input">
+                    <label for="bimestre1">Nota do primeiro bimestre</label>
+                    <input type="number" name="notas" id="bimestre1" required min="0" max="10" />
+
+                    <label for="bimestre2">Nota do segundo bimestre</label>
+                    <input type="number" name="notas" id="bimestre2" required min="0" max="10" />
+
+                    <label for="bimestre3">Nota do terceiro bimestre</label>
+                    <input type="number" name="notas" id="bimestre3" required min="0" max="10" />
+
+                    <label for="bimestre4">Nota do quarto bimestre</label>
+                    <input type="number" name="notas" id="bimestre4" required min="0" max="10" />
+                </section>
+            </div>
+
+            <div class="column">
+                <section class="result">
+                    <h2>Seu resultado será exibido abaixo:</h2>
+                    <h3></h3>
+                </section>
+            </div>
+        </div>
+
+        <button type="submit">Calcular</button>
+
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

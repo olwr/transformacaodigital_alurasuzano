@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Moedas</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title-row">
+        <h1>Conversor de moedas</h1>
+
+        <p>Converta valores em dólar ($) para real (R$)</p>
+    </div>
+
+
+    <main>
+        <div class="row">
+            <div class="column">
+                <label for="moeda"><i></i></label>
+                <input type="number" name="dolar" id="moeda" min="0.1" required placeholder="123">
+                <br>
+
+                <button type="submit">Converter</button>
+            </div>
+
+            <div class="column">
+                <p>Seu valor é:</p>
+                <h2></h2>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

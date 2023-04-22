@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Barbearia Alura</title>
+
+    <!-- google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="imgs/logo.png"
+                    alt="silhueta preta de um rosto masculino com cabelo curto penteado para trás, com óculos retangular, bigode grande e barba longa. o nome 'alura' todo em letras maisculas separa a imagem em duas partes - cima pelo óculos e baixo pela bigode.">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" placeholder="fulano da silva" class="padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="exemplo@gmail.com" class="padrao" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" pattern="[0-9]{2} [0-9]{2} [0-9]{5}-[0-9]{4}" maxlength="16"
+                placeholder="xx xx xxxxx-xxxx" class="padrao" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="padrao"></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">Email</label>
+
+                <label for="radio-telefone"> <input type="radio" name="contato" id="radio-telefone"
+                        value="telefone">Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" value="whatsapp"
+                        checked>Whatsapp</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="atendimento" id="atendimento">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label for="novidades"><input type="checkbox" name="sim" id="novidades">Gostaria de rebecer novidades por
+                email?</label>
+
+            <button type="submit" class="padrao">Enviar formulário</button>
+        </form>
+
+        <table>
+            <thead>
+                <th>Dia</th>
+                <th>Horário</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="imgs/logo-branco.png"
+            alt="silhueta branca de um rosto masculino com cabelo curto penteado para trás, com óculos retangular, bigode grande e barba longa. o nome 'alura' todo em letras maisculas separa a imagem em duas partes - cima pelo óculos e baixo pela bigode." />
+        <p> &copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
+</body>
+
+</html>

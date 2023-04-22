@@ -1,0 +1,72 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background: #ccc;
+    color: black;
+}
+
+body {
+    background: url(Calculadora.png) no-repeat fixed center;
+    border: 3px solid blue;
+    min-height: 940px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.title-row {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.row {
+    display: flex;
+    margin-top: 50px;
+    margin: 35px;
+    column-gap: 15px;
+}
+
+.column {
+    flex: 1;
+    border: 3px solid red;
+}
+
+input {
+    margin: 15px;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+button {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 9px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(250, 100, 80, 90%);
+}
+
+button:hover {
+    background: rgba(89, 198, 57, 90%);
+    transition: 0.5s;
+}
+
+p:nth-child(1) {
+    margin: 15px;
+}
+
+h2 {
+    background-color: rgba(44, 134, 124, 90%);
+    border-radius: 3px;
+    width: fit-content;
+    padding: 25px;
+    margin: auto;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
